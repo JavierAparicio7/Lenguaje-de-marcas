@@ -18,16 +18,5 @@
   <div class="producto"><h2>Candado U Pro</h2><p class="precio">29,95 €</p><button onclick="anadir('Candado U Pro')">Añadir</button></div>
   <p>Productos en el carrito: <span id="contador">0</span></p>
 </main>
-<script>
-  let carrito = [];
-  function anadir(producto) {
-    carrito.push(producto);
-    document.getElementById('contador').textContent = carrito.lenght;
-    console.log('Añadido:', producto);
-  }
-  document.getElementById('boton-menu').addEventListener('click', function () {
-    document.getElementById('menu').classList.toggle('abierto');
-  });
-</script>
 </body>
 </html>
